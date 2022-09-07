@@ -1,0 +1,10 @@
+package structurals.composite.exercise;
+
+public class Manager extends CompositeEmployee{
+
+	CompositeEmployee comp;
+	public Manager(int codigo, String nome, String cargo) {
+		comp.addEmployee(codigo, nome, cargo);
+	}
+
+}

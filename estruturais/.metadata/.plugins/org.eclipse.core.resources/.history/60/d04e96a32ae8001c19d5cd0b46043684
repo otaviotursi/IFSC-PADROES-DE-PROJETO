@@ -1,0 +1,22 @@
+package structurals.composite.exercise;
+
+public class CompositeEmployee implements Employee {
+	
+	private int codigo;
+	private String nome;
+	private String cargo;
+	
+	@Override
+	public void showEmployeeDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void addEmployee(int codigo, String nome, String cargo) {
+		
+	}
+	
+	public void removeEmployee() {
+		
+	}
+
+}

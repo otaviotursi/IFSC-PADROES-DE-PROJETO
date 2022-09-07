@@ -1,0 +1,5 @@
+package behavioral.chainOfResponsibility.exercise;
+
+public class Dispenser extends SaqueHandler {
+
+}

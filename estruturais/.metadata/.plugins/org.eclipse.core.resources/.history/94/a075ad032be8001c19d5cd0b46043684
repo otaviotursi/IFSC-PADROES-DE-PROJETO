@@ -1,0 +1,19 @@
+package structurals.composite.exercise;
+
+import java.util.ArrayList;
+
+public class CompositeEmployee implements Employee {
+
+	
+	public CompositeEmployee(int codigo, String nome, String cargo) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void showEmployeeDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

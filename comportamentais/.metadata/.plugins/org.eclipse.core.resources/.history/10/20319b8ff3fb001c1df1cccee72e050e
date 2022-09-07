@@ -1,0 +1,24 @@
+package behavioral.state.exercise;
+
+public class Robot implements RoboticState{
+
+	@Override
+	public void walk() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void cook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void off() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

@@ -1,0 +1,41 @@
+package behavioral.state.exercise;
+
+import behavioral.state.sample.TVOnState;
+
+public class Robot implements RoboticState{
+
+	private String state;
+	
+	public Robot() {
+		state = "ON";
+		
+	}
+
+	public void turnOn() {
+		this.tvState= new TVOnState();
+	}
+	@Override
+	public void walk() {
+		System.out.println("Walking...");
+		
+	}
+
+	@Override
+	public void cook() {
+		if(state.equalsIgnoreCase("OFF")) {
+			System.out.println("Cannot cook at Off state.");
+		}else {
+			state="COOK";
+			System.out.println("Cooking...");
+		}
+		
+	}
+
+	@Override
+	public void off() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

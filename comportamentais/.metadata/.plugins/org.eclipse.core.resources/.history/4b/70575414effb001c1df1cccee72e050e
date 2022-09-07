@@ -1,0 +1,7 @@
+package behavioral.state.exercise;
+
+public interface State {
+
+	void changeChannel(int channel);
+	
+}

@@ -1,0 +1,15 @@
+package behavioral.chainOfResponsibility.exercise;
+
+public class Dispenser extends SaqueHandler {
+
+	int valorNota;
+	SaqueHandler handler;
+	
+	public Dispenser(SaqueHandler handler, int i) {
+		this.handler = handler;
+		valorNota = i;
+		this.SetHandler(handler, i);
+	}
+	
+
+}

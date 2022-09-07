@@ -1,0 +1,13 @@
+package behavioral.chainOfResponsibility.exercise;
+
+public class Dispenser extends SaqueHandler {
+
+	int valorNota;
+	SaqueHandler handler;
+	
+	public Dispenser(SaqueHandler handler, int i) {
+		super(handler, i);
+	}
+	
+
+}

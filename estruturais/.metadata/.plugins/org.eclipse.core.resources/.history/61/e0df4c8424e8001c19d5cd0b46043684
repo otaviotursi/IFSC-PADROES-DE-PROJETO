@@ -1,0 +1,11 @@
+package structurals.composite.exercise;
+
+public class CompositeEmployee implements Employee {
+
+	@Override
+	public void showEmployeeDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

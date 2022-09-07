@@ -1,0 +1,22 @@
+package structurals.composite.exercise;
+
+public class Director implements CompositeEmployee{
+
+	CompositeEmployee comp;
+
+	private int codigo;
+	private String nome;
+	private String cargo;
+	
+	
+	public Director(int codigo, String nome, String cargo) {
+		this.codigo = codigo;
+		this.nome = nome;
+		this.cargo = cargo;
+	}
+
+	public void addEmployee(Manager man1) {
+		comp.addEmployee(codigo, nome, cargo);
+	}
+
+}

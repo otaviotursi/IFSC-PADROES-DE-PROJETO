@@ -1,0 +1,9 @@
+package structurals.composite.exercise;
+
+public class Director {
+
+	public Director(int codigo, String nome, String cargo) {
+		comp.addEmployee(codigo, nome, cargo);
+	}
+
+}

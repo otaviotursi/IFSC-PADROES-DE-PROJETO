@@ -1,0 +1,39 @@
+package behavioral.chainOfResponsibility.exercise;
+
+
+public class SaqueHandler {
+
+	private SaqueHandler _successor;
+	private int nota =0;
+	private int saque =0;
+	int qntNotas = 0;
+
+	public void handleSaque(int i) {
+		qntNotas = 0;
+		saque = 0;
+		System.out.println("\nHandleHelp"+nota+": "+qntNotas+" notas"+"  "+"saque:"+saque);
+		saque = i;
+		while (this.nota < saque) {
+			saque -= this.nota;
+			qntNotas ++;
+		}
+		System.out.println("\nDispenser de "+nota+": "+qntNotas+" notas");
+		
+		this.HandleHelp();
+	}
+	
+	public SaqueHandler(SaqueHandler handler, int nota) {
+		this._successor = handler;
+		this.nota = nota;
+	}
+	
+
+	public void HandleHelp() {
+		if(_successor != null) {
+			_successor.HandleHelp();
+			_successor.handleSaque(saque);
+		}
+	}
+	
+
+}

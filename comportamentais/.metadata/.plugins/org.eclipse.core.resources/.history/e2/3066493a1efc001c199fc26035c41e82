@@ -1,0 +1,46 @@
+package behavioral.chainOfResponsibility.exercise;
+
+
+public class SaqueHandler {
+
+	private SaqueHandler _successor;
+	private int nota;
+	private int valor;
+	private int valorNota;
+	private int trocar;
+	int qntNotas = 0;
+	int sobra = 0;
+
+	public void handleSaque(int saque) {
+		while (this.valor > saque) {
+			this.valor - saque;
+			qntNotas ++;
+		}
+		
+		this.Calcular();
+		this.HandleHelp();
+	}
+	
+	public SaqueHandler(SaqueHandler handler, int nota) {
+		this._successor = handler;
+		this.nota = nota;
+	}
+	
+
+	public void HandleHelp() {
+		if(_successor != null) {
+			_successor.HandleHelp();
+		}
+	}
+	
+
+	public void Calcular() {
+
+		qntNotas = trocar % valor;
+		System.out.println("\nDispenser de "+valorNota+": "+qntNotas+"notas:");
+		sobra = trocar - (valorNota * qntNotas);
+		
+		this.valor = valor;
+	}
+
+}

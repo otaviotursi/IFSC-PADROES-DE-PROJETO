@@ -1,0 +1,7 @@
+package behavioral.state.exercise;
+
+public class Robot {
+
+	void changeChannel(int channel);
+	
+}

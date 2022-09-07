@@ -1,0 +1,27 @@
+package behavioral.observer.exercise;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public abstract class Sujeito {
+
+	private List<Observer> _observers;
+	
+	public Sujeito() {
+		_observers = new LinkedList<Observer>();
+	}
+	
+	public void Attach(Observer o) {
+		_observers.add(o);
+	}
+	
+	public void Detach(Observer o) {
+		_observers.remove(o);
+	}
+	
+	public void Notify() {
+		for (Observer observer : _observers) {
+			observer.Update(this);
+		}
+	}
+}

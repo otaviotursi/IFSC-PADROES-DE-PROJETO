@@ -1,0 +1,9 @@
+package structurals.composite.exercise;
+
+public class Intern {
+
+	public Intern(int i, String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package behavioral.chainOfResponsibility.exercise;
+
+public class Dispenser extends SaqueHandler {
+
+	public Dispenser(Object object, int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

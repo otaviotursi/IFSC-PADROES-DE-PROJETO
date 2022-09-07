@@ -1,0 +1,22 @@
+package behavioral.chainOfResponsibility.exercise;
+
+public class Dispenser extends SaqueHandler {
+
+	int valorNota;
+	SaqueHandler handler;
+	
+	public Dispenser(SaqueHandler handler, int i) {
+		this.handler = handler;
+		valorNota = i;
+	}
+	
+	public int Calcular(int sobra) {
+		int qntNotas = 0;
+		
+		System.out.println("\nDispenser de "+valorNota+": "+qntNotas+"notas:");
+
+		
+	}
+
+
+}

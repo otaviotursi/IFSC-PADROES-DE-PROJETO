@@ -1,0 +1,30 @@
+package behavioral.state.exercise;
+
+public class Robot implements RoboticState{
+
+	private String state;
+	
+	public Robot() {
+		state = "ON";
+	}
+	
+	@Override
+	public void walk() {
+		System.out.println("Walking...");
+		
+	}
+
+	@Override
+	public void cook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void off() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}
